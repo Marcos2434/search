@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="static/styles.css">
+        
+        <!--Product Sans-->
+        <link rel="stylesheet" href="https://egkoppel.github.io/product-sans/google-fonts.css">
+
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    </head>
+    <body> 
+        <nav id='nav1' class="navbar navbar-expand-sm navbar-light">
+            <!--a id="product-sans" style="font-weight: x-large; margin-top: 8px; color: gray; font-size: xx-large;" class="navbar-brand" href="#"><span style="color: #4285f4;">G</span><span style="color: #ea4335;">o</span><span style="color: #fbbc05;">o</span><span style="color: #4285f4;">g</span><span style="color: #34a853;">l</span><span style="color: #ea4335;">e</span></a-->
+            <a href="search.html" title="Google Home"><img src="static/advanced_logo.png" style="position: relative; right: 10px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link nav-own" href="/"> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item nav-own">
+                        <a class="nav-link" href="search.html">Text search</a>
+                    </li>
+                    <li class="nav-item nav-own">
+                        <a class="nav-link" href="image_search.html">Image search</a>
+                    </li>
+                    <li class="nav-item nav-own">
+                        <a class="nav-link" href="advanced_search.html">Advanced search</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="appbar">
+            <label style="margin-left: 10px">Advanced Search</label>
+        </div>
+
+        <hr width="100%" border-width="5">
+        
+        <div class="advanced">
+            <p id="above">Find pages with...</p>
+            <p id="above2">To do this in the search box.</p>
+        </div>
+
+        <br>
+        
+        <div class="advanced">
+            <form action="https://www.google.com/search" method="get">
+                <label for="as_q">All these words:</label>
+                <!--input class="input btn btn-light input-field" name="as_q" placeholder="All these words" type="text"><br><br-->
+                <input name="as_q" placeholder="All these words" type="text">
+                <div class="txt">Type the important words: <span>tri-colour rat terrier</span></div>
+                <br><br>
+                
+                <label for="as_q">This exact word or phrase:</label>
+                <input name="as_epq" placeholder="This exact word or phrase" type="text">
+                <div class="txt">Put exact words in quotes: <span>"rat terrier"</span></div>
+                <br><br>
+                
+                <label for="as_q">Any of these words:</label>
+                <input name="as_oq" placeholder="Any of these words" type="text">
+                <div class="txt">Type <span>OR</span> between all the words you want: <span>miniature OR standard</span></div> 
+                <br><br>
+
+                <label for="as_q">None of these words:</label>
+                <input name="as_eq" placeholder="None of these words" type="text">
+                <div class="txt">Put a minus sign just before words that you don't want: <span> -rodent, -"Jack Russell"</span></div>
+                <br><br>
+                
+                <input id="submit" type="submit" value="Advanced Search">        
+                <!--label>Number range</label>
+                <br>
+                <input style="width: 250px;" id="number-input" class="input btn btn-light input-field" name="as_nlo" placeholder="From this number" type="text">
+                <input style="width: 250px;" class="input btn btn-light input-field" name="as_nhi" placeholder="to this number" type="text"><br><br>
+                <input style="display: inline; border: 1px solid rgba(0, 0, 0, 0.473)" class="btn btn-light" type="submit" value="Google advanced search"-->
+            </form>
+        </div>     
+        
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
